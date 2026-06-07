@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica SOM — Baja de Peso Sin Cirugía en Ecuador</title>
+<meta name="description" content="Única clínica certificada en Ecuador en endoscopia bariátrica. Trata tu obesidad sin cirugía, sin cicatrices y con resultados reales. Quito, Ecuador.">
+<meta property="og:title" content="Clínica SOM — Baja de Peso Sin Cirugía">
+<meta property="og:description" content="Procedimientos mínimamente invasivos para sobrepeso y obesidad. Centro de entrenamiento internacional en endoscopia bariátrica.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* ─── TOKENS ─────────────────────────────────────────── */
+  :root {
+    --navy:        #1a2e5c;
+    --navy-mid:    #2d4a8a;
+    --blue:        #3b6cc7;
+    --blue-light:  #5e8fd4;
+    --sky:         #7eb6e8;
+    --sky-wash:    #b6d4ef;
+    --mist:        #d4e6f5;
+    --linen:       #f4f8fd;
+    --canvas:      #fdfefe;
+    --hairline:    #dce9f5;
+    --charcoal:    #1e2530;
+    --muted:       #4a5568;
+    --body:        #2d3748;
+
+    --r-card:      14px;
+    --r-badge:     999px;
+    --r-btn:       12px;
+    --gap-section: 96px;
+    --gap-elem:    24px;
+    --max-w:       1200px;
+
+    --font-serif:  'Cormorant Garamond', Georgia, serif;
+    --font-sans:   'DM Sans', system-ui, sans-serif;
+  }
+
+  /* ─── RESET ──────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--canvas);
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ─── TYPOGRAPHY ─────────────────────────────────────── */
+  .display {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    color: var(--canvas);
+  }
+  .heading {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(36px, 4.5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+  }
+  .heading-sm {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: var(--navy);
+  }
+  .subheading {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: clamp(17px, 2vw, 20px);
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 58ch;
+  }
+  .body-text {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  .caption {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ─── BADGE ──────────────────────────────────────────── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--mist);
+    color: var(--navy);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: var(--r-badge);
+    border: 1px solid var(--hairline);
+  }
+  .badge-white {
+    background: rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.9);
+    border-color: rgba(255,255,255,0.25);
+  }
+  .badge-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--blue);
+    flex-shrink: 0;
+  }
+  .badge-dot-white { background: rgba(255,255,255,0.7); }
+
+  /* ─── BUTTONS ────────────────────────────────────────── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--navy);
+    color: var(--canvas);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: var(--r-btn);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  .btn-primary:hover { background: var(--navy-mid); }
+  .btn-primary:active { transform: scale(0.98); }
+  .btn-primary svg { flex-shrink: 0; }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--navy);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 13px 22px;
+    border-radius: var(--r-btn);
+    border: 1.5px solid var(--navy);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .btn-ghost:hover { background: var(--navy); color: var(--canvas); }
+
+  .btn-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--canvas);
+    color: var(--navy);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: var(--r-btn);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+  }
+  .btn-white:hover { opacity: 0.9; }
+  .btn-white:active { transform: scale(0.98); }
+
+  /* ─── LAYOUT ─────────────────────────────────────────── */
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+  }
+  section { position: relative; }
+
+  /* ─── CHECK ICON ─────────────────────────────────────── */
+  .check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 32px;
+    background: var(--navy);
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .check-icon-light {
+    background: rgba(255,255,255,0.2);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     NAV
+  ═══════════════════════════════════════════════════════ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(253,254,254,0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--navy);
+  }
+  .nav-logo-icon {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .nav-logo-icon span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+  }
+  .nav-logo-icon .s { background: var(--navy); }
+  .nav-logo-icon .o { background: var(--blue); }
+  .nav-logo-icon .m { background: var(--sky); }
+  .nav-logo-text {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--charcoal);
+    padding: 6px 12px;
+    border-radius: 7px;
+    transition: background 0.15s;
+  }
+  .nav-links a:hover { background: var(--linen); }
+  .nav-cta { display: flex; align-items: center; gap: 12px; }
+  .nav-phone {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    opacity: 0.7;
+    display: none;
+  }
+  @media (min-width: 900px) { .nav-phone { display: block; } }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px; height: 2px;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: all 0.25s;
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .nav-phone { display: none !important; }
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    top: 64px; left: 0; right: 0;
+    background: var(--canvas);
+    border-bottom: 1px solid var(--hairline);
+    padding: 20px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--charcoal);
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+  .mobile-menu a:hover { background: var(--linen); }
+
+  /* ═══════════════════════════════════════════════════════
+     HERO — SPLIT PARALLAX
+  ═══════════════════════════════════════════════════════ */
+  #hero {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 64px;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    bottom: -120px; right: -80px;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(94,143,212,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-left-content { position: relative; z-index: 1; }
+  .hero-badge-wrap { margin-bottom: 32px; }
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sky);
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .hero-left .display { margin-bottom: 24px; }
+  .hero-subtitle {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.65);
+    max-width: 44ch;
+    margin-bottom: 40px;
+  }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 52px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+  }
+  .hero-stat-num {
+    font-family: var(--font-serif);
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .hero-stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+
+  .hero-right {
+    background: var(--mist);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(59,108,199,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-parallax-track {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 32px;
+    transform: translateY(0);
+    transition: transform 0.05s linear;
+    will-change: transform;
+  }
+  .hero-card {
+    background: var(--canvas);
+    border-radius: var(--r-card);
+    padding: 24px;
+    border: 1px solid var(--hairline);
+    width: 280px;
+    position: relative;
+  }
+  .hero-card-tag {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .hero-card-title {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .hero-card-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .hero-card-pill {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--mist);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 60px 28px; }
+    .hero-right { min-height: 360px; }
+    .hero-stats { gap: 20px; }
+    .hero-parallax-track { flex-direction: row; padding: 32px 20px; overflow-x: auto; }
+    .hero-card { min-width: 240px; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     MARQUEE STRIP
+  ═══════════════════════════════════════════════════════ */
+  .marquee-strip {
+    background: var(--navy);
+    padding: 14px 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .marquee-track {
+    display: flex;
+    gap: 0;
+    animation: marquee 28s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    padding: 0 36px;
+  }
+  .marquee-sep {
+    width: 4px; height: 4px;
+    background: var(--sky);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     INTRO — SPLIT (texto izq / stats der)
+  ═══════════════════════════════════════════════════════ */
+  #intro {
+    padding: var(--gap-section) 0;
+    background: var(--canvas);
+  }
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .intro-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .intro-stat {
+    background: var(--canvas);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .intro-stat-num {
+    font-family: var(--font-serif);
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--navy);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .intro-stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  @media (max-width: 900px) {
+    .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+    .intro-right { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     TRATAMIENTOS
+  ═══════════════════════════════════════════════════════ */
+  #tratamientos {
+    padding: var(--gap-section) 0;
+    background: var(--linen);
+  }
+  .section-header {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-header-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .treatment-card {
+    background: var(--canvas);
+    border-radius: var(--r-card);
+    border: 1px solid var(--hairline);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    cursor: default;
+  }
+  .treatment-card:hover {
+    border-color: var(--sky-wash);
+    transform: translateY(-3px);
+  }
+  .treatment-card.featured {
+    background: var(--navy);
+    border-color: var(--navy);
+    grid-column: span 2;
+  }
+  .treatment-card.featured .treatment-title,
+  .treatment-card.featured .treatment-tag,
+  .treatment-card.featured .treatment-desc { color: white; }
+  .treatment-card.featured .treatment-desc { color: rgba(255,255,255,0.65); }
+  .treatment-card.featured .treatment-tag { color: var(--sky); }
+  .treatment-icon {
+    width: 40px; height: 40px;
+    background: var(--mist);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+  }
+  .treatment-card.featured .treatment-icon {
+    background: rgba(255,255,255,0.12);
+  }
+  .treatment-tag {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+  .treatment-title {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .treatment-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+  .treatment-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--mist);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 999px;
+    width: fit-content;
+  }
+  .treatment-card.featured .treatment-pill {
+    background: rgba(255,255,255,0.15);
+    color: white;
+  }
+
+  @media (max-width: 900px) {
+    .treatments-grid { grid-template-columns: 1fr; }
+    .treatment-card.featured { grid-column: 1; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     PARALLAX SECTION — FONDO NAVY + TEXTO
+  ═══════════════════════════════════════════════════════ */
+  #parallax-banner {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    background: var(--navy);
+    isolation: isolate;
+  }
+  .parallax-bg {
+    position: absolute;
+    inset: -30%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(59,108,199,0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(126,182,232,0.15) 0%, transparent 50%);
+    will-change: transform;
+    pointer-events: none;
+  }
+  .parallax-banner-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .parallax-banner-left { }
+  .parallax-banner-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .parallax-banner-title {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  .parallax-banner-sub {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 36px;
+    max-width: 46ch;
+  }
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .feature-text-title {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .feature-text-body {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px) {
+    .parallax-banner-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     PROCESO — STEPS
+  ═══════════════════════════════════════════════════════ */
+  #proceso {
+    padding: var(--gap-section) 0;
+    background: var(--canvas);
+  }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-card);
+    overflow: hidden;
+    margin-top: 56px;
+  }
+  .step-item {
+    background: var(--canvas);
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    transition: background 0.2s;
+  }
+  .step-item:hover { background: var(--linen); }
+  .step-num {
+    font-family: var(--font-serif);
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--hairline);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .step-title {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .step-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 540px) {
+    .steps-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     TESTIMONIOS
+  ═══════════════════════════════════════════════════════ */
+  #testimonios {
+    padding: var(--gap-section) 0;
+    background: var(--linen);
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 52px;
+  }
+  .testimonial-card {
+    background: var(--canvas);
+    border-radius: var(--r-card);
+    border: 1px solid var(--hairline);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .testimonial-stars {
+    display: flex;
+    gap: 3px;
+  }
+  .star {
+    width: 14px; height: 14px;
+    background: var(--navy);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+  }
+  .testimonial-quote {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1.55;
+    flex: 1;
+  }
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .testimonial-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+  .testimonial-meta {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 768px) {
+    .testimonials-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     PROGRAMAS DE DIAGNÓSTICO
+  ═══════════════════════════════════════════════════════ */
+  #programas {
+    padding: var(--gap-section) 0;
+    background: var(--canvas);
+  }
+  .programas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 56px;
+  }
+  .programa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-card);
+    overflow: hidden;
+  }
+  .programa-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--hairline);
+    transition: background 0.15s;
+  }
+  .programa-item:last-child { border-bottom: none; }
+  .programa-item:hover { background: var(--linen); }
+  .programa-bullet {
+    width: 8px; height: 8px;
+    background: var(--blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .programa-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 3px;
+  }
+  .programa-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .programas-right { display: flex; flex-direction: column; gap: 20px; }
+  .program-highlight {
+    background: var(--navy);
+    border-radius: var(--r-card);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .program-highlight-title {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.2;
+  }
+  .program-highlight-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.6);
+  }
+  .program-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .program-item-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+  }
+  .program-check {
+    width: 18px; height: 18px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    .programas-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     CTA FINAL
+  ═══════════════════════════════════════════════════════ */
+  #cta-final {
+    padding: var(--gap-section) 0;
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+  #cta-final::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(94,143,212,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .cta-title {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .cta-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.6);
+    max-width: 44ch;
+    margin-bottom: 36px;
+  }
+  .cta-right {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--r-card);
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cta-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .cta-contact-icon {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cta-contact-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 3px;
+  }
+  .cta-contact-value {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+  }
+  .cta-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+  }
+
+  @media (max-width: 900px) {
+    .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     FOOTER
+  ═══════════════════════════════════════════════════════ */
+  footer {
+    background: #111827;
+    padding: 48px 0 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .footer-brand-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.6;
+    max-width: 32ch;
+  }
+  .footer-col-title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+  .footer-links a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    transition: color 0.15s;
+  }
+  .footer-links a:hover { color: white; }
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+  .footer-credit {
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+  }
+  .footer-credit a {
+    color: rgba(255,255,255,0.45);
+    transition: color 0.15s;
+  }
+  .footer-credit a:hover { color: rgba(255,255,255,0.7); }
+
+  @media (max-width: 900px) {
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 540px) {
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     FLOATING WHATSAPP
+  ═══════════════════════════════════════════════════════ */
+  .fab-whatsapp {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    width: 52px; height: 52px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+    z-index: 200;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+  }
+  .fab-whatsapp:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     SCROLL REVEAL
+  ═══════════════════════════════════════════════════════ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ─── SVG LOGO GLYPH ─────────────────────────────────── */
+  .logo-glyph {
+    width: 32px; height: 32px;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">
+        <span class="s">S</span>
+        <span class="o">O</span>
+        <span class="m">M</span>
+      </div>
+      <span class="nav-logo-text">Clínica SOM</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tratamientos">Tratamientos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#programas">Diagnóstico</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span class="nav-phone">0997 138 015</span>
+      <a href="https://wa.link/sompw" target="_blank" rel="noopener" class="btn-primary">
+        Agenda tu cita
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#tratamientos">Tratamientos</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#programas">Diagnóstico</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="https://wa.link/sompw" target="_blank" class="btn-primary" style="margin-top:8px">Agenda tu cita</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-left-content">
+      <div class="hero-badge-wrap">
+        <span class="badge badge-white">
+          <span class="badge-dot badge-dot-white"></span>
+          Única clínica certificada internacionalmente en Ecuador
+        </span>
+      </div>
+      <p class="hero-eyebrow">Endoscopia Bariátrica · Quito, Ecuador</p>
+      <h1 class="display">Baja de peso<br><em>sin cirugía.</em></h1>
+      <p class="hero-subtitle">Procedimientos mínimamente invasivos, sin cortes y con recuperación en días. Resultados reales avalados por tecnología de última generación.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.link/sompw" target="_blank" rel="noopener" class="btn-white">
+          Reserva tu valoración
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#tratamientos" class="btn-ghost" style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.25)">
+          Ver tratamientos
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">600+</div>
+          <div class="hero-stat-label">pacientes anuales</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">30min</div>
+          <div class="hero-stat-label">duración del procedimiento</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">0</div>
+          <div class="hero-stat-label">cicatrices visibles</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-parallax-track" id="parallax-track">
+      <div class="hero-card">
+        <div class="hero-card-tag">Exclusivo · Método MEGA</div>
+        <div class="hero-card-title">Plicatura Endoscópica</div>
+        <div class="hero-card-desc">El único método asistido por IA disponible en Ecuador. Pliegues de doble tamaño que la Manga Gástrica convencional.</div>
+        <span class="hero-card-pill">Sin incisiones externas</span>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-tag">Mínimamente invasivo</div>
+        <div class="hero-card-title">Manga Gástrica Endoscópica</div>
+        <div class="hero-card-desc">Reducción del estómago por vía oral. Recuperación en pocos días. Sin hospitalización prolongada.</div>
+        <span class="hero-card-pill">Pérdida sostenible</span>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-tag">Dispositivo temporal</div>
+        <div class="hero-card-title">Balón Intragástrico</div>
+        <div class="hero-card-desc">Ideal para sobrepeso grado I. Sedación local, 6–12 meses de acción, mejora glucosa y presión.</div>
+        <span class="hero-card-pill">Ambulatorio</span>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-tag">Control integral</div>
+        <div class="hero-card-title">Programa Metabólico</div>
+        <div class="hero-card-desc">Evaluaciones mensuales de composición corporal, control cardíaco y plan nutricional personalizado.</div>
+        <span class="hero-card-pill">Seguimiento continuo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item"><span class="marquee-sep"></span>Sin cirugía</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Sin cicatrices</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Método MEGA Exclusivo</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Centro Internacional Certificado</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Recuperación en días</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Resultados permanentes</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Tecnología con IA</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Quito, Ecuador</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item"><span class="marquee-sep"></span>Sin cirugía</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Sin cicatrices</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Método MEGA Exclusivo</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Centro Internacional Certificado</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Recuperación en días</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Resultados permanentes</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Tecnología con IA</span>
+    <span class="marquee-item"><span class="marquee-sep"></span>Quito, Ecuador</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="reveal">
+        <span class="badge" style="margin-bottom:24px">
+          <span class="badge-dot"></span>
+          Referente para Latinoamérica
+        </span>
+        <h2 class="heading" style="margin-bottom:20px">La clínica que lidera<br>la medicina bariátrica<br>en Ecuador</h2>
+        <p class="subheading" style="margin-bottom:32px">Somos el único centro certificado internacionalmente en endoscopia bariátrica del país. Nuestros médicos son entrenadores de técnicas que se practican en toda la región.</p>
+        <a href="#tratamientos" class="btn-primary">
+          Conoce nuestros tratamientos
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="intro-right reveal reveal-delay-2">
+        <div class="intro-stat">
+          <div class="intro-stat-num">600+</div>
+          <div class="intro-stat-label">Pacientes integrados anualmente en programas de control de peso</div>
+        </div>
+        <div class="intro-stat">
+          <div class="intro-stat-num">360</div>
+          <div class="intro-stat-label">Casos de obesidad tratados con reducción de IMC a menos de 30</div>
+        </div>
+        <div class="intro-stat">
+          <div class="intro-stat-num">30'</div>
+          <div class="intro-stat-label">Duración promedio del procedimiento Método MEGA</div>
+        </div>
+        <div class="intro-stat">
+          <div class="intro-stat-num">#1</div>
+          <div class="intro-stat-label">Centro de entrenamiento en endoscopia bariátrica de Latinoamérica</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMIENTOS -->
+<section id="tratamientos">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge reveal">
+        <span class="badge-dot"></span>
+        Sin bisturí, sin hospitalización
+      </span>
+      <div class="section-header-row">
+        <h2 class="heading reveal reveal-delay-1">Nuestros tratamientos</h2>
+        <p class="subheading reveal reveal-delay-2" style="max-width:44ch">Todos los procedimientos son endoscópicos y se realizan por vía oral. Sin cortes. Sin cicatrices.</p>
+      </div>
+    </div>
+
+    <div class="treatments-grid">
+      <!-- FEATURED -->
+      <div class="treatment-card featured reveal">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C10 2 6 5 6 9c0 2.2 1.8 4 4 4s4-1.8 4-4c0-4-4-7-4-7z" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 15c0 1.7 1.3 3 3 3s3-1.3 3-3" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="treatment-tag">Exclusivo en Ecuador · Asistido por IA</div>
+        <div class="treatment-title">Método MEGA<br>Plicatura Endoscópica</div>
+        <div class="treatment-desc">El procedimiento estrella de Clínica SOM. Sus siglas significan Gastroplastia Endoscópica de Mucosa Atrófica. Crea pliegues de doble tamaño que la Manga Gástrica convencional, con menor invasividad. Realizado en 30 minutos bajo anestesia general, sin cortes ni cicatrices.</div>
+        <span class="treatment-pill">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Único en Ecuador
+        </span>
+      </div>
+
+      <div class="treatment-card reveal reveal-delay-1">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6" stroke="#2d4a8a" stroke-width="1.5"/><path d="M10 7v6M7 10h6" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="treatment-tag">Mínimamente invasivo</div>
+        <div class="treatment-title">Manga Gástrica Endoscópica</div>
+        <div class="treatment-desc">Reducción del estómago desde el interior, por vía oral. Sin incisiones. Incluye control clínico, deportivo y nutricional a corto y mediano plazo.</div>
+        <span class="treatment-pill">Recuperación en días</span>
+      </div>
+
+      <div class="treatment-card reveal reveal-delay-2">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><ellipse cx="10" cy="10" rx="5" ry="7" stroke="#2d4a8a" stroke-width="1.5"/><path d="M10 3v14" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round" opacity=".4"/></svg>
+        </div>
+        <div class="treatment-tag">Dispositivo temporal</div>
+        <div class="treatment-title">Balón Intragástrico</div>
+        <div class="treatment-desc">Silicona insertada en el estómago para reducir ingesta. 6–12 meses de acción. Mejora diabetes tipo 2, hipertensión y colesterol asociados a la obesidad.</div>
+        <span class="treatment-pill">Sobrepeso grado I</span>
+      </div>
+
+      <div class="treatment-card reveal">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round"/><path d="M4 10c0 3.3 2.7 5 6 5" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round" opacity=".4"/></svg>
+        </div>
+        <div class="treatment-tag">Para rebote</div>
+        <div class="treatment-title">Método TORe</div>
+        <div class="treatment-desc">Trans Oral Reduction para pacientes que recuperaron peso tras cirugía bariátrica previa. Reduce el estoma gástrico sin nueva intervención.</div>
+        <span class="treatment-pill">Post-cirugía</span>
+      </div>
+
+      <div class="treatment-card reveal reveal-delay-1">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10a5 5 0 0110 0" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round"/><path d="M7 15h6" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round" opacity=".5"/><circle cx="10" cy="10" r="1.5" fill="#2d4a8a"/></svg>
+        </div>
+        <div class="treatment-tag">Endoscópico</div>
+        <div class="treatment-title">POSE Bariátrica</div>
+        <div class="treatment-desc">Reducción del estómago mediante puntos de sutura internos, sin incisiones externas. Procedimiento ambulatorio con alta el mismo día.</div>
+        <span class="treatment-pill">Ambulatorio</span>
+      </div>
+
+      <div class="treatment-card reveal reveal-delay-2">
+        <div class="treatment-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 6h12M4 10h8M4 14h5" stroke="#2d4a8a" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="treatment-tag">Programa integral</div>
+        <div class="treatment-title">Programa Clínico Metabólico</div>
+        <div class="treatment-desc">Combina evaluación médica, nutricional y psicológica mensual. Control de composición corporal, velocidad metabólica y gimnasio médico.</div>
+        <span class="treatment-pill">Pérdida sostenible</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX BANNER -->
+<section id="parallax-banner">
+  <div class="parallax-bg" id="parallax-bg"></div>
+  <div class="container">
+    <div class="parallax-banner-inner">
+      <div>
+        <span class="badge badge-white reveal" style="margin-bottom:12px">
+          <span class="badge-dot badge-dot-white"></span>
+          Referente de confianza
+        </span>
+        <h2 class="parallax-banner-title reveal reveal-delay-1">El único centro<br>de entrenamiento<br>internacional<br><em>en Ecuador</em></h2>
+        <p class="parallax-banner-sub reveal reveal-delay-2">Nuestros especialistas forman a médicos de toda Latinoamérica en técnicas de endoscopia bariátrica. Cuando eliges Clínica SOM, eliges al maestro.</p>
+        <a href="https://wa.link/sompw" target="_blank" rel="noopener" class="btn-white reveal reveal-delay-3">
+          Solicita tu valoración gratuita
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="parallax-banner-right">
+        <div class="feature-row reveal">
+          <div class="check-icon check-icon-light">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="feature-text-title">Tecnología asistida por IA</div>
+            <div class="feature-text-body">El Método MEGA usa inteligencia artificial para guiar la plicatura con precisión milimétrica.</div>
+          </div>
+        </div>
+        <div class="feature-row reveal reveal-delay-1">
+          <div class="check-icon check-icon-light">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="feature-text-title">Sin hospitalizaciones prolongadas</div>
+            <div class="feature-text-body">La mayoría de procedimientos son ambulatorios o requieren menos de 24 horas de observación.</div>
+          </div>
+        </div>
+        <div class="feature-row reveal reveal-delay-2">
+          <div class="check-icon check-icon-light">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="feature-text-title">Seguimiento completo post-procedimiento</div>
+            <div class="feature-text-body">Control nutricional, deportivo y clínico durante toda la recuperación y mantenimiento de resultados.</div>
+          </div>
+        </div>
+        <div class="feature-row reveal reveal-delay-3">
+          <div class="check-icon check-icon-light">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3.5 3.5L12 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="feature-text-title">Mejora de enfermedades asociadas</div>
+            <div class="feature-text-body">Diabetes tipo 2, hipertensión y colesterol alto responden positivamente a los procedimientos.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge reveal">
+        <span class="badge-dot"></span>
+        Ruta del paciente
+      </span>
+      <h2 class="heading reveal reveal-delay-1">Tu camino a los resultados</h2>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">01</div>
+        <div class="step-title">Valoración inicial gratuita</div>
+        <div class="step-desc">Consulta con nuestro especialista para evaluar tu caso, índice de masa corporal y antecedentes médicos.</div>
+      </div>
+      <div class="step-item reveal reveal-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-title">Diagnóstico personalizado</div>
+        <div class="step-desc">Calorimetría directa, composición corporal y plan nutricional para identificar el tratamiento ideal para ti.</div>
+      </div>
+      <div class="step-item reveal reveal-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-title">Procedimiento en 30 minutos</div>
+        <div class="step-desc">Anestesia general, procedimiento endoscópico por vía oral. Sin cortes. Sin cicatrices. Alta el mismo día o siguiente.</div>
+      </div>
+      <div class="step-item reveal reveal-delay-3">
+        <div class="step-num">04</div>
+        <div class="step-title">Seguimiento y mantenimiento</div>
+        <div class="step-desc">Control mensual de peso, composición corporal, evaluación deportiva y soporte nutricional continuo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge reveal">
+        <span class="badge-dot"></span>
+        Pacientes reales
+      </span>
+      <h2 class="heading reveal reveal-delay-1">Lo que dicen quienes ya lo vivieron</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <div class="testimonial-quote">"Con el balón intragástrico logré perder peso de forma segura. Mejoré mi relación con la comida y me siento más activa que hace años."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">Lucía P.</div>
+          <div class="testimonial-meta">52 años · Balón Intragástrico</div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <div class="testimonial-quote">"Elegí la manga gástrica endoscópica y perdí más de 20 kilos. Recuperé la energía y una confianza que no tenía desde hace mucho tiempo."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">Anita G.</div>
+          <div class="testimonial-meta">45 años · Manga Gástrica Endoscópica</div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <div class="testimonial-quote">"Los resultados fueron rápidos y sin ninguna invasión. El equipo me acompañó en cada etapa. Totalmente diferente a lo que esperaba."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">Juan P.</div>
+          <div class="testimonial-meta">38 años · Manga Gástrica Endoscópica</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS DE DIAGNÓSTICO -->
+<section id="programas">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge reveal">
+        <span class="badge-dot"></span>
+        Diagnóstico completo
+      </span>
+      <h2 class="heading reveal reveal-delay-1">Antes de actuar,<br>evaluamos a fondo</h2>
+    </div>
+
+    <div class="programas-grid">
+      <div class="programa-list reveal">
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Calorimetría Directa</div>
+            <div class="programa-desc">Examen no invasivo que mide el gasto calórico en estado basal para personalizar tu dieta.</div>
+          </div>
+        </div>
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Composición Corporal</div>
+            <div class="programa-desc">Análisis detallado de masa grasa, muscular y porcentaje de agua corporal.</div>
+          </div>
+        </div>
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Prueba de Esfuerzo</div>
+            <div class="programa-desc">Medición de consumo de O2, METs y calorías utilizadas en esfuerzo físico controlado.</div>
+          </div>
+        </div>
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Test Muscular</div>
+            <div class="programa-desc">Diagnóstico de grupos musculares para diseñar el plan de actividad física adecuado.</div>
+          </div>
+        </div>
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Plan Nutricional</div>
+            <div class="programa-desc">Alimentación personalizada para pérdida de peso saludable y sostenible a largo plazo.</div>
+          </div>
+        </div>
+        <div class="programa-item">
+          <div class="programa-bullet"></div>
+          <div>
+            <div class="programa-name">Cálculo de IMC</div>
+            <div class="programa-desc">Herramienta de evaluación inicial para identificar el grado de sobrepeso u obesidad.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="programas-right reveal reveal-delay-2">
+        <div class="program-highlight">
+          <span class="badge badge-white" style="width:fit-content">Programa integral</span>
+          <div class="program-highlight-title">Programa Clínico Metabólico</div>
+          <div class="program-highlight-desc">Un acompañamiento de 360 grados que combina evaluación médica, control nutricional y seguimiento deportivo mes a mes.</div>
+          <div class="program-items">
+            <div class="program-item-row">
+              <div class="program-check">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              Evaluación metabólica mensual
+            </div>
+            <div class="program-item-row">
+              <div class="program-check">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              Control cardíaco y pulmonar
+            </div>
+            <div class="program-item-row">
+              <div class="program-check">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              Evaluaciones en gimnasio médico
+            </div>
+            <div class="program-item-row">
+              <div class="program-check">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              Composición corporal mensual
+            </div>
+            <div class="program-item-row">
+              <div class="program-check">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              Soporte psicológico continuo
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.link/sompw" target="_blank" rel="noopener" class="btn-primary" style="width:fit-content">
+          Consulta el programa
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <span class="badge badge-white reveal" style="margin-bottom:12px">
+          <span class="badge-dot badge-dot-white"></span>
+          Agenda hoy
+        </span>
+        <h2 class="cta-title reveal reveal-delay-1">Tu transformación<br>empieza con una<br>valoración gratuita</h2>
+        <p class="cta-subtitle reveal reveal-delay-2">Sin compromiso. Sin esperas. Nuestro equipo evalúa tu caso y te recomienda el tratamiento más adecuado para tu metabolismo y objetivos.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap" class="reveal reveal-delay-3">
+          <a href="https://wa.link/sompw" target="_blank" rel="noopener" class="btn-white">
+            Solicita tu valoración
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-right reveal reveal-delay-2">
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a7 7 0 100 14A7 7 0 009 2z" stroke="rgba(255,255,255,0.7)" stroke-width="1.3"/><path d="M9 5v4l2.5 2.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="cta-contact-label">Horario</div>
+            <div class="cta-contact-value">Lunes a Viernes, 8h00–18h00</div>
+          </div>
+        </div>
+        <div class="cta-divider"></div>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3.5c0-.8.7-1.5 1.5-1.5h1.8c.4 0 .7.3.8.6l.8 3.2c.1.4 0 .8-.3 1L6.4 8c1.2 2.5 3.1 4.4 5.6 5.6l.7-1.2c.2-.3.6-.4 1-.3l3.2.8c.3.1.6.4.6.8v1.8c0 .8-.7 1.5-1.5 1.5C8 16.2 1.8 10 1.8 3.5z" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="cta-contact-label">Teléfono</div>
+            <div class="cta-contact-value">0997 138 015</div>
+          </div>
+        </div>
+        <div class="cta-divider"></div>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2C6.2 2 4 4.2 4 7c0 4.5 5 9 5 9s5-4.5 5-9c0-2.8-2.2-5-5-5z" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="1.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.3"/></svg>
+          </div>
+          <div>
+            <div class="cta-contact-label">Dirección</div>
+            <div class="cta-contact-value">Av. Mariana de Jesús OE7-02,<br>Edificio CITIMED, Piso 8, Quito</div>
+          </div>
+        </div>
+        <div class="cta-divider"></div>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="rgba(255,255,255,0.7)" stroke-width="1.3"/><path d="M2 7l7 4.5L16 7" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="cta-contact-label">Redes sociales</div>
+            <div class="cta-contact-value">@clinica_somec</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="display:flex;gap:3px">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#1a2e5c;font-size:11px;font-weight:600;color:white">S</span>
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#3b6cc7;font-size:11px;font-weight:600;color:white">O</span>
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#7eb6e8;font-size:11px;font-weight:600;color:white">M</span>
+          </div>
+        </div>
+        <div class="footer-brand-name">Clínica SOM</div>
+        <p class="footer-brand-desc">Única clínica certificada como centro de entrenamiento internacional en endoscopia bariátrica en Ecuador.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Tratamientos</div>
+        <ul class="footer-links">
+          <li><a href="#tratamientos">Método MEGA</a></li>
+          <li><a href="#tratamientos">Manga Gástrica</a></li>
+          <li><a href="#tratamientos">Balón Intragástrico</a></li>
+          <li><a href="#tratamientos">POSE Bariátrica</a></li>
+          <li><a href="#tratamientos">Método TORe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Diagnóstico</div>
+        <ul class="footer-links">
+          <li><a href="#programas">Calorimetría</a></li>
+          <li><a href="#programas">Composición Corporal</a></li>
+          <li><a href="#programas">Prueba de Esfuerzo</a></li>
+          <li><a href="#programas">Plan Nutricional</a></li>
+          <li><a href="#programas">Test Muscular</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-links">
+          <li><a href="tel:0997138015">0997 138 015</a></li>
+          <li><a href="https://wa.link/sompw" target="_blank">WhatsApp</a></li>
+          <li><a href="https://instagram.com/clinica_somec" target="_blank">Instagram</a></li>
+          <li><a href="https://facebook.com/ClinicaSobrepesoEC" target="_blank">Facebook</a></li>
+          <li><a href="https://youtube.com/@ClinicaSOM" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Clínica SOM. Todos los derechos reservados.</span>
+      <span class="footer-credit">Diseño por <a href="https://orionstudio.online" target="_blank">Orion AI Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB WHATSAPP -->
+<a href="https://wa.link/sompw" target="_blank" rel="noopener" class="fab-whatsapp" title="Chatea con nosotros">
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 2C7.37 2 2 7.37 2 14c0 2.13.56 4.12 1.54 5.84L2 26l6.3-1.52A11.93 11.93 0 0014 26c6.63 0 12-5.37 12-12S20.63 2 14 2z" fill="white" fill-opacity="0.95"/>
+    <path d="M10.2 8.5c-.2-.5-.42-.51-.62-.52l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.97.95-.97 2.31s.99 2.68 1.13 2.86c.14.18 1.9 3.03 4.72 4.13 2.34.93 2.82.74 3.33.7.51-.05 1.65-.68 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33-.28-.14-1.65-.81-1.9-.9-.26-.1-.44-.14-.63.14-.18.28-.72.9-.88 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.24-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48l-.84-2.06z" fill="#25D366"/>
+  </svg>
+</a>
+
+<!-- META PIXEL (placeholder) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+// fbq('init', 'PIXEL_ID_HERE');
+// fbq('track', 'PageView');
+</script>
+
+<script>
+  /* ── HAMBURGER ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+
+  /* ── SCROLL REVEAL ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  /* ── PARALLAX ── */
+  const parallaxTrack = document.getElementById('parallax-track');
+  const parallaxBg   = document.getElementById('parallax-bg');
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+
+        /* Hero cards float upward as user scrolls */
+        if (parallaxTrack) {
+          parallaxTrack.style.transform = `translateY(${scrollY * 0.12}px)`;
+        }
+
+        /* Radial gradient parallax background */
+        if (parallaxBg) {
+          const section = document.getElementById('parallax-banner');
+          const rect = section.getBoundingClientRect();
+          const rel = rect.top / window.innerHeight;
+          parallaxBg.style.transform = `translateY(${rel * -40}px)`;
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  /* ── NAV ACTIVE SCROLL ── */
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+  const sections = ['tratamientos','proceso','programas','testimonios'].map(id => document.getElementById(id)).filter(Boolean);
+
+  function updateActive() {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.fontWeight = a.href.includes(current) ? '500' : '400';
+    });
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+</script>
+</body>
+</html>
